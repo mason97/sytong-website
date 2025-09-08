@@ -124,7 +124,7 @@ var filterList = {
     	filter: '.filter'
     		},
 				load: {
-				filter: '.design, .branding, .advertising, .photography, .wordpress'  
+				filter: 'all'  
 			}
 		});
 	}
