@@ -43,11 +43,11 @@
 	01. Common
 =================================== */
 ::selection {
-	background-color: #274abb;
+	background-color: #2188c0;
 	color: #fff;
 }
 ::-moz-selection {
- background-color: #274abb;
+ background-color: #2188c0;
  color: #fff;
 }
 img {
@@ -106,7 +106,7 @@ a:hover, a:focus, a:active {
 	line-height: 30px;
 	font-size: 12px;
 	color: #fff;
-	background-color: #274abb;
+	background-color: #2188c0;
 	text-decoration: none;
 	border-radius: 4px;
 	z-index: 9999;
@@ -118,7 +118,7 @@ a:hover, a:focus, a:active {
 }
 /* --- Buttons --- */
 .btn-style-1 {
-	background-color: #274abb;
+	background-color: #2188c0;
 	color: #fff;
 	border: 0;
 	border-radius: 4px;
@@ -163,7 +163,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .btn-style-2:hover {
-	background-color: #274abb;
+	background-color: #2188c0;
 	color: #fff;
 	text-decoration: none;
 }
@@ -172,7 +172,7 @@ a:hover, a:focus, a:active {
 	font-size: 14px;
 }
 .btn-style-3 {
-	background-color: #274abb;
+	background-color: #2188c0;
 	color: #fff;
 	border: 0;
 	border-radius: 4px;
@@ -205,14 +205,14 @@ a:hover, a:focus, a:active {
 	font-size: 14px;
 	font-weight: 600;
 	display: inline-block;
-	color: #274abb;
+	color: #2188c0;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
 .btn-underline:hover {
-	border-bottom: 1px solid #274abb;
+	border-bottom: 1px solid #2188c0;
 	color: #999;
 }
 /* --- Loading --- */
@@ -251,7 +251,7 @@ a:hover, a:focus, a:active {
 	margin: auto;
 	width: 2px;
 	height: 20px;
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 .section-title h2:after {
 	position: absolute;
@@ -262,7 +262,7 @@ a:hover, a:focus, a:active {
 	margin: auto;
 	width: 60px;
 	height: 2px;
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 /* ===================================
 	02. Header
@@ -287,7 +287,7 @@ a:hover, a:focus, a:active {
 .header-contact li a span {
 	display: inline-block;
 	font-size: 14px;
-	color: #274abb;
+	color: #2188c0;
 	margin-right: 2px;
 	font-weight: 700;
 	display: inline-block;
@@ -300,7 +300,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.5s ease-in-out;
 }
 .header-contact li a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 /* header social */
 .header-social {
@@ -318,7 +318,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.5s ease-in-out;
 }
 .header-social li a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .header .navbar-brand {
 	padding: 0px;
@@ -339,13 +339,13 @@ a:hover, a:focus, a:active {
 	text-transform: uppercase;
 }
 .header-lover .navbar .nav-item .nav-link:hover, .header-lover .navbar .nav-item.active a {
-	color: #274abb;
+	color: #2188c0;
 }
 .header-lover .navbar .nav-item.active .dropdown-menu .dropdown-item {
 	color: #fff;
 }
 .header-lover .navbar .nav-item.active .dropdown-menu .dropdown-item:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .header-lover .navbar .nav-item:last-child .nav-link {
 	padding-right: 0px;
@@ -372,8 +372,8 @@ a:hover, a:focus, a:active {
 	border-bottom: 0px;
 }
 .header .dropdown-menu .dropdown-item:hover, .header .dropdown-menu .dropdown-item:active {
-	color: #274abb;
-	border-left: 1px solid #274abb;
+	color: #2188c0;
+	border-left: 1px solid #2188c0;
 	background-color: transparent;
 }
 /*Navbar Toogle*/
@@ -467,9 +467,9 @@ a:hover, a:focus, a:active {
 	text-transform: capitalize;
 }
 .slider .carousel-caption h2 span {
-	color: #274abb;
+	color: #2188c0;
 	font-weight: 700;
-	border-bottom: 1px solid #274abb;
+	border-bottom: 1px solid #2188c0;
 }
 .slider .carousel-caption p {
 	line-height: 26px;
@@ -486,7 +486,7 @@ a:hover, a:focus, a:active {
 }
 .slider .carousel-indicators li.active {
 	opacity: 1;
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 /* ===================================
 	04. About Us
@@ -504,7 +504,7 @@ a:hover, a:focus, a:active {
 	05. Contact CTA
 =================================== */
 .contact-cta {
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 .contact-cta h3 {
 	color: #fff;
@@ -573,7 +573,7 @@ a:hover, a:focus, a:active {
 	position: relative;
 	padding-bottom: 25px;
 	padding-top: 25px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	margin-bottom: 25px;
 	font-weight: 600;
 	-webkit-transition: all 0.5s ease-in-out;
@@ -616,7 +616,7 @@ a:hover, a:focus, a:active {
 	margin-right: 10px;
 	text-align: center;
 	line-height: 40px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	position: relative;
 }
 .service-item .service-item-header i:after {
@@ -624,7 +624,7 @@ a:hover, a:focus, a:active {
 	content: "";
 	width: 2px;
 	height: 20px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	left: 20px;
 	bottom: -20px;
 }
@@ -632,12 +632,12 @@ a:hover, a:focus, a:active {
 	font-size: 20px;
 }
 .service-item:hover {
-	border: 1px solid #274abb;
+	border: 1px solid #2188c0;
 	box-shadow: 0 3px 38px rgba(0,0,0,.1);
 }
 /* service details page */
 .service-details-page ul li i {
-	color: #274abb;
+	color: #2188c0;
 	padding-right: 6px;
 }
 .service-details-page ul li {
@@ -648,7 +648,7 @@ a:hover, a:focus, a:active {
 	padding-bottom: 0px;
 }
 .service-details-page .blockquote {
-	border-left: 1px solid #274abb;
+	border-left: 1px solid #2188c0;
 	padding: 15px;
 	background-color: #f5f5f5;
 }
@@ -696,7 +696,7 @@ a:hover, a:focus, a:active {
 	height: 55px;
 }
 .subscribe-area button {
-	background-color: #274abb;
+	background-color: #2188c0;
 	color: #fff;
 	border: 0;
 	border-radius: 4px;
@@ -742,7 +742,7 @@ a:hover, a:focus, a:active {
 	text-align: center;
 	background-color: #ebebeb;
 	padding: 15px 0px;
-	color: #274abb;
+	color: #2188c0;
 }
 .pricing-box .price-div {
 	font-size: 30px;
@@ -778,10 +778,10 @@ a:hover, a:focus, a:active {
 }
 .pricing-box .price-list li i {
 	padding-right: 6px;
-	color: #274abb;
+	color: #2188c0;
 }
 .pricing-box:hover {
-	border-color: #274abb;
+	border-color: #2188c0;
 }
 /* ===================================
 	10. Team
@@ -797,7 +797,7 @@ a:hover, a:focus, a:active {
 	transition: all .4s cubic-bezier(.39, .58, .57, 1);
 }
 .team-item:hover {
-	border: 1px solid #274abb;
+	border: 1px solid #2188c0;
 }
 .team-item .team-img {
 	position: relative;
@@ -832,7 +832,7 @@ a:hover, a:focus, a:active {
 }
 .team-item .team-social {
 	padding: 15px 0px;
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 .team-item .team-social a {
 	color: #ccc;
@@ -878,15 +878,15 @@ a:hover, a:focus, a:active {
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	border-radius: 100%;
 	font-size: 16px;
 }
 .testimonial-item h4 {
-	color: #274abb;
+	color: #2188c0;
 }
 .testimonial-item:hover {
-	border: 1px solid #274abb;
+	border: 1px solid #2188c0;
 }
 .testimonial-carousel.owl-theme .owl-dots {
 	margin-top: 20px !important;
@@ -897,8 +897,8 @@ a:hover, a:focus, a:active {
 	margin: 0px 6px;
 }
 .testimonial-carousel.owl-theme .owl-dots .owl-dot span:hover, .testimonial-carousel.owl-theme .owl-dots .owl-dot.active span {
-	border: 2px solid #274abb;
-	background-color: #274abb;
+	border: 2px solid #2188c0;
+	background-color: #2188c0;
 }
 /* ===================================
 	12. Blog
@@ -930,7 +930,7 @@ a:hover, a:focus, a:active {
 	margin-bottom: 6px;
 	border-radius: 4px;
 	font-size: 11px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 6px 12px;
@@ -946,7 +946,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .blog-item h4 a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .blog-item .post-meta {
 	border-top: 1px solid #ebebeb;
@@ -968,7 +968,7 @@ a:hover, a:focus, a:active {
 	position: relative;
 }
 .blog-item .post-meta li a i {
-	color: #274abb;
+	color: #2188c0;
 	padding-right: 4px;
 }
 .blog-item .post-figure {
@@ -1007,7 +1007,7 @@ a:hover, a:focus, a:active {
 	margin-bottom: 6px;
 	border-radius: 4px;
 	font-size: 11px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	text-transform: uppercase;
 	text-decoration: none;
 	padding: 6px 12px;
@@ -1023,7 +1023,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .blog-item-list h4 a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .blog-item-list .post-meta {
 	border-top: 1px solid #ebebeb;
@@ -1045,7 +1045,7 @@ a:hover, a:focus, a:active {
 	position: relative;
 }
 .blog-item-list .post-meta li a i {
-	color: #274abb;
+	color: #2188c0;
 	padding-right: 4px;
 }
 .blog-item-list .post-figure {
@@ -1087,7 +1087,7 @@ a:hover, a:focus, a:active {
 	background-color: transparent;
 }
 .blog-search-form button:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 /* blog tags */
 .list-tags li {
@@ -1111,8 +1111,8 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .list-tags li a:hover {
-	background-color: #274abb;
-	border-color: #274abb;
+	background-color: #2188c0;
+	border-color: #2188c0;
 	color: #fff;
 }
 /* list categories */
@@ -1126,7 +1126,7 @@ a:hover, a:focus, a:active {
 	border-bottom: 1px solid #eee;
 	font-size: 14px;
 	display: inline-block;
-	color: #274abb;
+	color: #2188c0;
 	text-decoration: none;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1135,7 +1135,7 @@ a:hover, a:focus, a:active {
 }
 .list-categories li a:hover {
 	color: #999;
-	border-bottom: 1px solid #274abb;
+	border-bottom: 1px solid #2188c0;
 }
 /* list recent posts */
 .list-recent-posts li {
@@ -1160,15 +1160,15 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .list-recent-posts li .time {
-	color: #274abb;
+	color: #2188c0;
 	font-size: 12px;
 }
 .list-recent-posts li a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 /* download service brochures */
 .download-service-brochures {
-	background-color: #274abb;
+	background-color: #2188c0;
 	padding: 20px;
 	border-radius: 4px;
 }
@@ -1206,7 +1206,7 @@ a:hover, a:focus, a:active {
 	position: relative;
 }
 .blog-post-wrap .post-meta li a i {
-	color: #274abb;
+	color: #2188c0;
 	padding-right: 4px;
 }
 .blog-post-wrap blockquote {
@@ -1239,8 +1239,8 @@ a:hover, a:focus, a:active {
 }
 .share ul li a:hover {
 	color: #fff;
-	background-color: #274abb;
-	border-color: #274abb;
+	background-color: #2188c0;
+	border-color: #2188c0;
 }
 /* comment area */
 .comment-bg {
@@ -1277,7 +1277,7 @@ a:hover, a:focus, a:active {
 }
 .box-comment .meta a {
 	font-weight: 500;
-	color: #274abb;
+	color: #2188c0;
 	text-transform: uppercase;
 	text-decoration: underline;
 }
@@ -1361,12 +1361,12 @@ a:hover, a:focus, a:active {
 	font-size: 14px;
 }
 .footer-link li a i {
-	color: #274abb;
+	color: #2188c0;
 	font-size: 10px;
 	padding-right: 6px;
 }
 .footer-link li a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 /* footer post */
 .footer-post-item {
@@ -1415,7 +1415,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .footer-post-item .footer-post-des p a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .footer-post-item .footer-post-des .footer-post-time {
 	color: #999;
@@ -1441,7 +1441,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .footer-social a:hover {
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 /* footer contact */
 .footer-contact li {
@@ -1453,7 +1453,7 @@ a:hover, a:focus, a:active {
 	margin-bottom: 0px;
 }
 .footer-contact li span {
-	color: #274abb;
+	color: #2188c0;
 	font-weight: 700;
 }
 .footer-contact li a {
@@ -1461,7 +1461,7 @@ a:hover, a:focus, a:active {
 	font-size: 14px;
 }
 .footer-contact li a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 /* copyright footer */
 .copyright-footer {
@@ -1505,7 +1505,7 @@ a:hover, a:focus, a:active {
 }
 /* Breadcrumb */
 .breadcrumb-area {
-	border-top: 1px solid #274abb;
+	border-top: 1px solid #2188c0;
 	padding: 10px 0px 0px 0px;
 	text-align: center;
 	display: inline-block;
@@ -1516,7 +1516,7 @@ a:hover, a:focus, a:active {
 	font-size: 12px;
 }
 .breadcrumb-area .breadcrumb li a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .breadcrumb-area .breadcrumb-item + .breadcrumb-item:before {
 	color: rgba(255,255,255,0.4);
@@ -1568,7 +1568,7 @@ a:hover, a:focus, a:active {
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	-webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
@@ -1595,7 +1595,7 @@ a:hover, a:focus, a:active {
 	font-family: 'Montserrat', sans-serif;
 }
 .portfolio-box .portfolio-box-des h5 a:hover {
-	color: #274abb;
+	color: #2188c0;
 }
 .portfolio-box .date {
 	position: absolute;
@@ -1658,13 +1658,13 @@ a:hover, a:focus, a:active {
 	left: 0px;
 	top: 6px;
 	font-size: 35px;
-	color: #274abb;
+	color: #2188c0;
 }
 /* project info */
 .project-info {
 	padding: 15px;
 	border: 1px solid #f5f5f5;
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 .project-info li {
 	position: relative;
@@ -1700,7 +1700,7 @@ a:hover, a:focus, a:active {
 	content: "";
 	width: 8px;
 	height: 8px;
-	background-color: #274abb;
+	background-color: #2188c0;
 	border-radius: 100%;
 	top: 50%;
 	transform: translateY(-50%);
@@ -1733,7 +1733,7 @@ a:hover, a:focus, a:active {
 	min-width: 21px;
 	font-size: 20px;
 	line-height: 24px;
-	color: #274abb;
+	color: #2188c0;
 	margin-right: 8px;
 }
 .list-contacts a {
@@ -1761,7 +1761,7 @@ a:hover, a:focus, a:active {
 	padding-bottom: 6px;
 }
 .list-terms-medium dt i {
-	color: #274abb;
+	color: #2188c0;
 }
 .list-terms-medium dd {
 	font-size: 14px;
@@ -1812,7 +1812,7 @@ a:hover, a:focus, a:active {
 	transition: all 0.3s ease-in-out;
 }
 .contact-social a:hover {
-	background-color: #274abb;
+	background-color: #2188c0;
 }
 /* contact form */
 .contact-form-area {
@@ -1887,7 +1887,7 @@ a:hover, a:focus, a:active {
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
-	background-color: #274abb;
+	background-color: #2188c0;
 	color: #fff;
 	border-radius: 100%;
 }
@@ -1896,7 +1896,7 @@ a:hover, a:focus, a:active {
 =================================== */
 .faq-box .accordion-item .accordion-header .accordion-button .fa-chevron-up {
 	display: inline-block;
-	color: #274abb;
+	color: #2188c0;
 	position: absolute;
 	right: 15px;
 	top: 50%;
@@ -1945,7 +1945,7 @@ a:hover, a:focus, a:active {
 	margin-top: 1px;
 }
 .faq-box .accordion-item .accordion-header .accordion-button {
-	color: #274abb !important;
+	color: #2188c0 !important;
 	padding: 10px 15px;
 	background-color: #f8f8f8;
 	position: relative;
@@ -1969,5 +1969,5 @@ a:hover, a:focus, a:active {
 	font-size: 100px;
 	font-weight: 700;
 	line-height: 90px;
-	color: #274abb;
+	color: #2188c0;
 }
