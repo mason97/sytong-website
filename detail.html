@@ -9,7 +9,7 @@
     />
 
     <!-- page title -->
-    <title>视宇通科技</title>
+    <title>产品详情 - 视宇通科技</title>
     <!-- favicon -->
     <link rel="icon" href="favicon.ico" />
     <!-- bootstrap core CSS -->
@@ -26,55 +26,108 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/helper.css" rel="stylesheet" />
 
-    <!-- Additional styles for products -->
+    <!-- Additional styles for product detail -->
     <style>
-      .product-price {
-        color: #e74c3c;
-        font-size: 18px;
-        font-weight: bold;
+      .product-detail-section {
+        padding: 70px 0 40px;
       }
 
-      .post-figure img {
+      .product-image {
         width: 100%;
-        height: 200px;
+        height: 400px;
         object-fit: contain;
-        transition: transform 0.3s ease;
-      }
-
-      .blog-item:hover .post-figure img {
-        transform: scale(1.05);
-      }
-
-      #loading {
-        padding: 50px 0;
-      }
-
-      .spinner-border {
-        color: #007bff;
-      }
-
-      .alert {
-        margin: 20px 0;
-      }
-
-      .post-content {
+        background-color: #f7f9f9;
+        border-radius: 8px;
         padding: 20px;
       }
 
-      .post-tag a {
-        display: inline-block;
-        padding: 5px 10px;
-        background-color: #f8f9fa;
-        border-radius: 3px;
-        text-decoration: none;
-        font-size: 12px;
-        color: #6c757d;
-        transition: background-color 0.3s ease;
+      .product-info {
+        padding-left: 30px;
       }
 
-      .post-tag a:hover {
+      .product-title-row {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+
+      .product-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: #333;
+        margin: 0;
+      }
+
+      .product-category {
+        display: inline-block;
         background-color: #007bff;
         color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        white-space: nowrap;
+      }
+
+      .product-description {
+        font-size: 1.1rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .product-specs {
+        margin-bottom: 30px;
+      }
+
+      .product-specs h5 {
+        color: #333;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .product-detail-images {
+        padding: 40px 0;
+        background-color: #f8f9fa;
+      }
+
+      .detail-image {
+        width: 100%;
+        height: auto;
+        margin: 0 0 30px 0;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .loading-spinner {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .error-message {
+        text-align: center;
+        padding: 50px 0;
+        color: #dc3545;
+      }
+
+      @media (max-width: 768px) {
+        .product-info {
+          padding-left: 0;
+          margin-top: 30px;
+        }
+
+        .product-title-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+
+        .product-title {
+          font-size: 2rem;
+        }
       }
     </style>
   </head>
@@ -155,7 +208,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">主页</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="products.html">产品中心</a>
                 </li>
                 <!-- <li class="nav-item">
@@ -184,12 +237,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 offset-lg-2">
-            <h1>产品中心</h1>
+            <h1 id="page-title">产品详情</h1>
             <!-- breadcrumb area -->
             <div class="breadcrumb-area">
               <ol class="breadcrumb bg-transparent rounded-0 m-0 p-0">
-                <li class="breadcrumb-item"><a href="#">主页</a></li>
-                <li class="breadcrumb-item active">产品中心</li>
+                <li class="breadcrumb-item"><a href="index.html">主页</a></li>
+                <li class="breadcrumb-item">
+                  <a href="products.html">产品中心</a>
+                </li>
+                <li class="breadcrumb-item active" id="breadcrumb-product">
+                  产品详情
+                </li>
               </ol>
             </div>
             <!-- breadcrumb area end -->
@@ -199,11 +257,11 @@
     </div>
     <!-- ================ Inner Page title area end ================ -->
 
-    <!-- ================ Blog area ================ -->
-    <div class="blog-area pt-70 pb-40">
+    <!-- ================ Product Detail Section ================ -->
+    <div class="product-detail-section">
       <div class="container">
         <!-- Loading indicator -->
-        <div id="loading" class="text-center mb-4" style="display: none">
+        <div id="loading" class="loading-spinner" style="display: none">
           <div class="spinner-border" role="status">
             <span class="sr-only">加载中...</span>
           </div>
@@ -211,22 +269,58 @@
         </div>
 
         <!-- Error message -->
-        <div
-          id="error-message"
-          class="alert alert-danger"
-          style="display: none"
-        >
-          <p class="mb-0">加载产品信息失败，请稍后重试。</p>
+        <div id="error-message" class="error-message" style="display: none">
+          <h4>产品信息加载失败</h4>
+          <p>请检查产品名称或稍后重试</p>
         </div>
 
-        <!-- Products container -->
-        <div id="products-container" class="row">
-          <!-- Products will be dynamically loaded here -->
+        <!-- Product detail content -->
+        <div id="product-content" style="display: none">
+          <!-- Product Info Section -->
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6 col-md-6">
+              <img id="product-image" src="" alt="" class="product-image" />
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h2 id="product-title" class="product-title"></h2>
+                  <div id="product-category" class="product-category"></div>
+                </div>
+                <p id="product-description" class="product-description"></p>
+
+                <div class="product-specs">
+                  <h5>产品规格</h5>
+                  <div id="product-specs-content">
+                    <!-- 产品规格信息将在这里动态加载 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- ================ Blog area end ================ -->
+    <!-- ================ Product Detail Section end ================ -->
 
+    <!-- ================ Product Detail Images Section ================ -->
+    <div
+      id="product-detail-images"
+      class="product-detail-images"
+      style="display: none"
+    >
+      <div class="container">
+        <!-- <h3 class="text-center mb-4">产品详情图</h3> -->
+        <div class="row">
+          <div class="col-12">
+            <div id="detail-images-container">
+              <!-- 详情图片将在这里动态加载 -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ================ Product Detail Images Section end ================ -->
     <!-- ================ Footer area ================ -->
     <footer class="footer pt-50">
       <div class="container">
@@ -264,7 +358,7 @@
                 >
               </li>
               <li>
-                <a href="services.html"
+                <a href="products.html"
                   ><i class="fas fa-chevron-right"></i> 产品中心</a
                 >
               </li>
@@ -297,44 +391,6 @@
               </li>
             </ul>
           </div>
-          <!-- <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
-          <h4 class="footer-item-title">最新资讯</h4>
-          <div class="footer-post-wrap">
-            <div class="footer-post-item">
-              <div class="footer-post-item-img">
-                <a href="#"><img src="img/blog/footer-post-1.jpg" alt="" /></a>
-              </div>
-              <div class="footer-post-des">
-                <p class="footer-post-title">
-                  <a href="#">热成像技术在狩猎中的应用</a>
-                </p>
-                <time class="footer-post-time" datetime="2030">Jan 01, <span class="current-year"></span></time>
-              </div>
-            </div>
-            <div class="footer-post-item">
-              <div class="footer-post-item-img">
-                <a href="#"><img src="img/blog/footer-post-2.jpg" alt="" /></a>
-              </div>
-              <div class="footer-post-des">
-                <p class="footer-post-title">
-                  <a href="#">夜视技术在军事侦察中的应用</a>
-                </p>
-                <time class="footer-post-time" datetime="2030">Jan 01, <span class="current-year"></span></time>
-              </div>
-            </div>
-            <div class="footer-post-item">
-              <div class="footer-post-item-img">
-                <a href="#"><img src="img/blog/footer-post-3.jpg" alt="" /></a>
-              </div>
-              <div class="footer-post-des">
-                <p class="footer-post-title">
-                  <a href="#">热成像技术在安防监控中的应用</a>
-                </p>
-                <time class="footer-post-time" datetime="2030">Jan 01, <span class="current-year"></span></time>
-              </div>
-            </div>
-          </div>
-        </div> -->
           <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
             <!-- footer title -->
             <h4 class="footer-item-title">联系我们</h4>
@@ -410,20 +466,37 @@
     <!-- script js -->
     <script src="js/custom.js"></script>
 
-    <!-- Products loading script -->
+    <!-- Product detail loading script -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        loadProducts();
+        loadProductDetail();
       });
 
-      async function loadProducts() {
+      function getUrlParameter(name) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(name);
+      }
+
+      async function loadProductDetail() {
+        const productName = getUrlParameter("product");
+
+        if (!productName) {
+          showError("未指定产品名称");
+          return;
+        }
+
         const loadingElement = document.getElementById("loading");
         const errorElement = document.getElementById("error-message");
-        const productsContainer = document.getElementById("products-container");
+        const contentElement = document.getElementById("product-content");
+        const detailImagesElement = document.getElementById(
+          "product-detail-images"
+        );
 
         // Show loading indicator
         loadingElement.style.display = "block";
         errorElement.style.display = "none";
+        contentElement.style.display = "none";
+        detailImagesElement.style.display = "none";
 
         try {
           const response = await axios.get(
@@ -431,60 +504,70 @@
           );
 
           if (response.data.success && response.data.data.products) {
-            renderProducts(response.data.data.products);
+            const product = response.data.data.products.find(
+              (p) => p.name === productName
+            );
+
+            if (product) {
+              renderProductDetail(product);
+            } else {
+              showError(`未找到产品: ${productName}`);
+            }
           } else {
             throw new Error("Invalid response format");
           }
         } catch (error) {
-          console.error("Error loading products:", error);
-          errorElement.style.display = "block";
+          console.error("Error loading product detail:", error);
+          showError("加载产品信息失败，请稍后重试");
         } finally {
           loadingElement.style.display = "none";
         }
       }
 
-      function renderProducts(products) {
-        const productsContainer = document.getElementById("products-container");
-        productsContainer.innerHTML = "";
+      function renderProductDetail(product) {
+        // Update page title and breadcrumb
+        document.getElementById("page-title").textContent = product.name;
+        document.getElementById("breadcrumb-product").textContent =
+          product.name;
+        document.title = `${product.name} - 视宇通科技`;
 
-        products.forEach((product) => {
-          const productCard = createProductCard(product);
-          productsContainer.appendChild(productCard);
-        });
-      }
+        // Update product information
+        document.getElementById("product-image").src = product.image;
+        document.getElementById("product-image").alt = product.name;
+        document.getElementById("product-category").textContent =
+          product.category;
+        document.getElementById("product-title").textContent = product.name;
+        document.getElementById("product-description").textContent =
+          product.description || "暂无详细描述";
 
-      function createProductCard(product) {
-        const col = document.createElement("div");
-        col.className = "col-lg-4 col-md-6 col-sm-6 mb-30";
-
-        col.innerHTML = `
-        <div class="blog-item">
-          <div class="post-figure" style="background-color:#f7f9f9;">
-            <img src="${product.image}" alt="${
-          product.name
-        }" onerror="this.src='img/products/placeholder.png'">
-          </div>
-          <div class="post-content">
-            <div class="post-tag">
-              <a href="#">${product.category}</a>
-              <a href="#" style="margin-left: 15px;">${product.name}</a>
-            </div>
-            ${product.description ? `<p>${product.description}</p>` : ""}
-            <!-- 价格显示暂时注释掉
-            ${
-              product.price
-                ? `<div class="product-price mb-2"><strong>¥${product.price}</strong></div>`
-                : ""
-            }
-            -->
-            <a href="detail.html?product=${encodeURIComponent(
-              product.name
-            )}" class="btn-underline">了解详情...</a>
-          </div>
-        </div>
+        // Update product specifications (you can customize this based on your needs)
+        const specsContainer = document.getElementById("product-specs-content");
+        specsContainer.innerHTML = `
+        <p><strong>产品名称:</strong> ${product.name}</p>
+        <p><strong>产品类别:</strong> ${product.category}</p>
+        <p><strong>产品描述:</strong> ${product.description || "暂无"}</p>
       `;
 
-        return col;
+        // Show content
+        document.getElementById("product-content").style.display = "block";
+
+        // Show detail images section with the detail_page image
+        if (product.detail_page) {
+          const detailImagesContainer = document.getElementById(
+            "detail-images-container"
+          );
+          detailImagesContainer.innerHTML = `
+          <img src="${product.detail_page}" alt="${product.name} 详情图" class="detail-image">
+        `;
+          document.getElementById("product-detail-images").style.display =
+            "block";
+        }
+      }
+
+      function showError(message) {
+        const errorElement = document.getElementById("error-message");
+        errorElement.querySelector("p").textContent = message;
+        errorElement.style.display = "block";
       }
     </script>
   </body>
